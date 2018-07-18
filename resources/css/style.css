@@ -4,6 +4,30 @@ body {
   color: seashell;
   background-color: black;
   opacity: 0.9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  display: inline-flex;
+  border-bottom: 1px solid seashell;
+  width: 100%;
+}
+
+.logo {
+  height: 50px;
+  margin-left: 10px;
+  justify-content: flex-start;
+}
+
+.mission {
+  top: 70px;
+  position: relative;
+  flex: initial;
+  background-size: cover;
+  background-image: url("../../resources/images/img-mission-background.jpg");
 }
 
 .featured {
@@ -12,19 +36,32 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .featured img {
   height: 200px;
   width: 300px;
 }
 
 .locations {
-  display: flex;
-  height: 500px;
-  width: auto;
-  background-image: url(../resources/images/img-locations-background.jpg);
+  background-size: cover;
+  background-image: url("../../resources/images/img-locations-background.jpg");
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.downtown .bayside .oakdale {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  flex-direction: column;
 }
 
 footer {
   justify-content: center;
-  
+
+}
+
+#copyright {
+  justify-content: flex-start;
 }
